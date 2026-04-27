@@ -1,0 +1,70 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 25,
+    "spacing": 0,
+    "output": "DP-2",
+    "reload_style_on_change": true,
+
+
+    "modules-left": ["niri/workspaces", "niri/window"],
+    "modules-center": [],
+    "modules-right": [
+        "tray",
+        "niri/language",
+        "pulseaudio",
+        "pulseaudio#microphone",
+        "clock"
+    ],
+
+    "tray": {
+		    "icon-size": 18
+	  }, 
+
+    "niri/workspaces": {
+        "format": " {index} ",
+        "disable-scroll": true
+    },
+
+    "niri/window": {
+        "format": " > {title}",
+        "max-length": 40
+    },
+
+    "niri/language": {
+        "format": " {}",
+        "format-en": "FUCK",
+        "format-ru": "БЛЯТЬ"
+    },
+
+    "pulseaudio": {
+        "format": " {volume}%",
+        "on-click": "pavucontrol",
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+    },
+
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "on-click": "pavucontrol",
+        "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +5%",
+        "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -5%"
+    },
+
+    "clock": {
+        "format": "{:%d.%m.%Y | %H:%M}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode"          : "month",
+            "on-scroll"     : 1,
+            "format": {
+                "months":     "<span color='#f16d95'><b>{}</b></span>",
+                "days":       "<span color='#bbbbbb'>{}</span>",
+                "weekdays":   "<span color='#f16d95'><b>{}</b></span>",
+                "today":      "<span color='#f16d95'><b>{}</b></span>"
+            }
+        }
+    }
+}
+

@@ -1,0 +1,10 @@
+/* Переменные, генерируемые Matugen */
+@define-color bg_window rgba(16, 20, 15, 1.0);
+@define-color bg_inner #1d211b;
+@define-color bg_input #272b25;
+@define-color bg_selected #255023;
+
+@define-color accent #a2d398;
+@define-color text_main #e0e4da;
+@define-color text_dim #c2c8bd;
+@define-color text_selected #bdf0b3;

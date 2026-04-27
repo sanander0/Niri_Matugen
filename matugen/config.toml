@@ -1,0 +1,44 @@
+[config]
+version_check = false
+reload_apps = true
+
+[config.wallpaper]
+command = "swww"
+arguments = ["img"]
+set = true
+
+[config.reload_apps_list]
+gtk_theme = true
+# можно добавить waybar = true, kitty = true и т.д.
+
+# Шаблон для GTK3
+[templates.gtk3]
+input_path = "~/.config/matugen/templates/gtk-colors.css" 
+output_path = "~/.config/gtk-3.0/colors.css"
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-dark'
+
+# Шаблон для GTK4
+[templates.gtk4]
+input_path = "~/.config/matugen/templates/gtk-colors.css"
+output_path = "~/.config/gtk-4.0/colors.css"
+
+[templates.niri]
+input_path = '~/.config/matugen/templates/niri-colors.kdl'
+output_path = '~/.config/niri/niri-colors.kdl'
+
+[templates.alacritty]
+input_path = '~/.config/matugen/templates/alacritty.toml'
+output_path = '~/.config/alacritty/colors.toml'
+
+[templates.waybar]
+input_path = '~/.config/matugen/templates/waybar-style.css'
+output_path = '~/.config/waybar/colors.css'
+
+[templates.wofi]
+input_path = "~/.config/matugen/templates/wofi-style.css"
+output_path = "~/.config/wofi/colors.css"
+
+[templates.mako]
+input_path = "~/.config/matugen/templates/mako"
+output_path = "~/.config/mako/config"
+post_hook = "pkill -USR1 mako || true"

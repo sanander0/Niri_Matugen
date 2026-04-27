@@ -1,0 +1,38 @@
+layout {
+
+    focus-ring {
+        width 0
+        active-color "{{colors.secondary.default.hex}}"
+        inactive-color "{{colors.outline.default.hex}}"
+        urgent-color   "{{colors.error.default.hex}}"
+    }
+
+    border {
+        on
+        width 2
+        active-color   "{{colors.secondary.default.hex}}"
+        inactive-color "{{colors.outline.default.hex}}"
+        urgent-color   "{{colors.error.default.hex}}"
+
+    }
+
+    shadow {
+        color "#00000070"
+    }
+
+    tab-indicator {
+        active-color   "#e8b6f0"
+        inactive-color "#988e97"
+        urgent-color   "#ffb4ab"
+    }
+
+    insert-hint {
+        color "{{colors.primary.default.hex}}80"
+    }
+}
+
+overview {
+    backdrop-color "{{colors.background.default.hex}}"
+    zoom 0.35
+}
+

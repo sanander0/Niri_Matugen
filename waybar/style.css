@@ -1,0 +1,52 @@
+@import url("colors.css");
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Mono", "monospace";
+    font-size: 16px;
+}
+
+window#waybar {
+    background-color: @bg-color;
+    border: 1px solid @main-pink;
+    color: @main-pink;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: @main-pink;
+    border-right: 1px solid @main-pink;
+}
+
+#workspaces button.active {
+    background: @main-pink;
+    color: @bg-color;
+}
+
+/* Применяем стиль ко всем блокам справа */
+#tray,
+#language,
+#pulseaudio, 
+#pulseaudio.microphone, 
+#clock {
+    padding: 0 10px;
+    border-left: 1px solid @main-pink;
+    color: @main-pink;
+}
+
+#window {
+    padding-left: 0px;
+    color: @text-muted;
+}
+
+/* Календарь при наведении */
+tooltip {
+    background: @bg-color;
+    border: 1px solid @main-pink;
+}
+
+tooltip label {
+    color: @main-pink;
+}

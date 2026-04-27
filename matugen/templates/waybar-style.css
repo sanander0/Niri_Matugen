@@ -1,0 +1,3 @@
+@define-color bg-color {{colors.background.default.hex}};
+@define-color main-pink {{colors.secondary.default.hex}};
+@define-color text-muted {{colors.primary.default.hex}};
