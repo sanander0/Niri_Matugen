@@ -43,9 +43,9 @@ matugen image ~/Path/to/Wallpaper
 |----------------|-----------------------------|
 | Mod + Q        | Открыть терминал            |
 | Mod + W        | Лаунчер (wofi toggle)       |
-| Super + B      | Firefox                     |
-| Super + E      | Файловый менеджер (nemo)    |
-| Super + T      | Telegram                    |
+| Mod + B        | Firefox                     |
+| Mod + E        | Файловый менеджер (nemo)    |
+| Mod + T        | Telegram                    |
 | Mod + Tab      | Overview                    |
 | Mod + C        | Закрыть окно                |
 | Mod + F        | Максимизировать             |
